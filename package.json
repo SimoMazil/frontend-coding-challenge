@@ -1,0 +1,19 @@
+{
+  "name": "frontend-coding-challenge",
+  "version": "1.0.0",
+  "description": "Front-end Coding Challenge",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SimoMazil/frontend-coding-challenge.git"
+  },
+  "author": "Mohammed Mazil",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SimoMazil/frontend-coding-challenge/issues"
+  },
+  "homepage": "https://github.com/SimoMazil/frontend-coding-challenge#readme"
+}
