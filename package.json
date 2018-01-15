@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/SimoMazil/frontend-coding-challenge#readme",
   "devDependencies": {
-    "gulp": "^4.0.0"
+    "gulp": "^4.0.0",
+    "gulp-sass": "^3.1.0"
   }
 }
