@@ -12,7 +12,7 @@ header {
     background: linear-gradient(#273042 20%, transparent, #273042); }
   header .top-bar-header {
     background: #273042;
-    height: 60px;
+    min-height: 60px;
     padding-top: 15px; }
     header .top-bar-header h1 {
       font-family: "Croissant One", cursive;
@@ -23,10 +23,15 @@ header {
         color: #E23943; }
     header .top-bar-header select {
       height: 30px;
-      width: 100px;
+      width: 60px;
+      margin-left: 50px;
+      background: url("../icons/arrow-down.png") no-repeat right transparent;
+      appearance: none;
+      -moz-appearance: none;
+      -webkit-appearance: none;
       border: none;
-      display: block;
-      margin: 0px auto; }
+      color: #fff;
+      font-family: 'Avenir'; }
     header .top-bar-header ul {
       list-style: none;
       float: right; }
@@ -57,6 +62,9 @@ header {
           border: none;
           height: 30px;
           width: 80px;
+          -webkit-border-radius: 20px;
+          -moz-border-radius: 20px;
+          -ms-border-radius: 20px;
           border-radius: 20px; }
     header .description-header .description-details .description-image .image {
       width: 190px;
@@ -83,6 +91,19 @@ header {
   header .filter-header {
     margin-top: 83px;
     min-height: 40px; }
+    header .filter-header .filter-dropdown {
+      padding: 0px; }
+      header .filter-header .filter-dropdown select {
+        height: 30px;
+        width: 90px;
+        margin-left: 50px;
+        background: url("../icons/arrow-down.png") no-repeat right transparent;
+        appearance: none;
+        -moz-appearance: none;
+        -webkit-appearance: none;
+        border: none;
+        color: #fff;
+        font-family: 'Avenir'; }
     header .filter-header .filter-menu {
       padding-bottom: 0px; }
       header .filter-header .filter-menu ul {
