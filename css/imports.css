@@ -1,6 +1,6 @@
 header {
   background-color: #273042;
-  height: 433px;
+  min-height: 433px;
   position: relative;
   background-image: url("../images/background.jpg");
   background-position: center;
@@ -36,6 +36,53 @@ header {
         header .top-bar-header ul li .profile {
           width: 30px;
           height: 30px; }
+  header .description-header {
+    min-height: 190px;
+    margin-top: 60px; }
+    header .description-header .description-details ul {
+      list-style: none;
+      float: right;
+      margin-right: 10px; }
+      header .description-header .description-details ul li {
+        float: left;
+        margin-right: 10px; }
+        header .description-header .description-details ul li button {
+          color: #fff;
+          background: #E23943;
+          border: none;
+          height: 30px;
+          width: 80px;
+          border-radius: 20px; }
+    header .description-header .description-details .description-image img {
+      display: block;
+      margin: 0px auto; }
+    header .description-header .description-details .description-text {
+      color: #fff;
+      padding-top: 50px;
+      padding-left: 20px; }
+      header .description-header .description-details .description-text h2 {
+        font-family: "Croissant One", cursive; }
+      header .description-header .description-details .description-text p {
+        font-family: "Montserrat", sans-serif; }
+      header .description-header .description-details .description-text span {
+        font-family: "Montserrat", sans-serif;
+        font-size: 10px; }
+  header .filter-header {
+    margin-top: 83px;
+    min-height: 40px; }
+    header .filter-header .filter-menu {
+      padding-bottom: 0px; }
+      header .filter-header .filter-menu ul {
+        list-style: none; }
+        header .filter-header .filter-menu ul li {
+          float: left;
+          color: #fff;
+          margin-left: 30px;
+          font-size: 12px; }
+        header .filter-header .filter-menu ul .active {
+          color: #E23943;
+          border-bottom: 2px solid #E23943;
+          padding-bottom: 7px; }
 
 html,
 body,

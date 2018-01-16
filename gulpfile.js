@@ -9,7 +9,6 @@ gulp.task('sass', function (done) {
         done();
 });
 
-// Reload all Browsers
 gulp.task('bs-reload', function (done) {
     browserSync.reload();
     done();

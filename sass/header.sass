@@ -2,7 +2,7 @@
 
 header
   background-color: $background-g-color
-  height: 433px
+  min-height: 433px
   position: relative
   background-image: url("../images/background.jpg")
   background-position: center
@@ -26,7 +26,7 @@ header
       text-align: center
 
       span
-        color: #E23943
+        color: $color-g-red
 
     select
       height: 30px
@@ -46,3 +46,67 @@ header
         .profile
           width: 30px
           height: 30px
+
+  .description-header
+    min-height: 190px
+    margin-top: 60px
+
+    .description-details
+
+      ul
+        list-style: none
+        float: right
+        margin-right: 10px
+
+        li
+          float: left
+          margin-right: 10px
+
+          button
+            color: #fff
+            background: $color-g-red
+            border: none
+            height: 30px
+            width: 80px
+            border-radius: 20px
+
+      .description-image
+
+        img
+          display: block
+          margin: 0px auto
+
+      .description-text
+        color: #fff
+        padding-top: 50px
+        padding-left: 20px
+
+        h2
+          font-family: $font-croissant
+        p
+          font-family: $font-Montserrat
+        span
+          font-family: $font-Montserrat
+          font-size: 10px
+
+  .filter-header
+    margin-top: 83px
+    min-height: 40px
+
+    .filter-dropdown
+
+    .filter-menu
+      padding-bottom: 0px
+      ul
+        list-style: none
+
+        li
+          float: left
+          color: #fff
+          margin-left: 30px
+          font-size: 12px
+
+        .active
+          color: $color-g-red
+          border-bottom: 2px solid $color-g-red
+          padding-bottom: 7px
