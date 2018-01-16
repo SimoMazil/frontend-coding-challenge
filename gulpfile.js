@@ -9,6 +9,12 @@ gulp.task('sass', function (done) {
         done();
 });
 
+// Reload all Browsers
+gulp.task('bs-reload', function (done) {
+    browserSync.reload();
+    done();
+});
+
 gulp.task('browser-sync', function(done) {
     browserSync.init(["css/*.css"], {
         server: {
@@ -19,6 +25,7 @@ gulp.task('browser-sync', function(done) {
 });
 
 gulp.task('default', gulp.series('sass', 'browser-sync', function(done) {
-  gulp.watch("sass/*.sass", gulp.series("sass"));
-  done();
+    gulp.watch("sass/*.sass", gulp.series("sass"));
+    gulp.watch("index.html", gulp.series("bs-reload"));
+    done();
 }));

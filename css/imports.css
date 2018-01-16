@@ -1,15 +1,41 @@
 header {
-  background: #273042;
-  height: 433px; }
-
-section {
-  height: 750px; }
-
-footer:before {
-  background: #273042; }
-
-footer {
-  height: 150px; }
+  background-color: #273042;
+  height: 433px;
+  position: relative;
+  background-image: url("../images/background.jpg");
+  background-position: center;
+  background-size: cover; }
+  header .background-header {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: linear-gradient(#273042 20%, transparent, #273042); }
+  header .top-bar-header {
+    background: #273042;
+    height: 60px;
+    padding-top: 15px; }
+    header .top-bar-header h1 {
+      font-family: "Croissant One", cursive;
+      color: #fff;
+      font-size: 30px;
+      text-align: center; }
+      header .top-bar-header h1 span {
+        color: #E23943; }
+    header .top-bar-header select {
+      height: 30px;
+      width: 100px;
+      border: none;
+      display: block;
+      margin: 0px auto; }
+    header .top-bar-header ul {
+      list-style: none;
+      float: right; }
+      header .top-bar-header ul li {
+        margin-right: 15px;
+        float: left; }
+        header .top-bar-header ul li .profile {
+          width: 30px;
+          height: 30px; }
 
 html,
 body,
