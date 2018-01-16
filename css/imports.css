@@ -65,7 +65,10 @@ header {
       -webkit-border-radius: 190px;
       -moz-border-radius: 190px;
       -ms-border-radius: 190px;
-      border-radius: 190px; }
+      border-radius: 190px;
+      margin: 0px auto; }
+      header .description-header .description-details .description-image .image img {
+        height: 100%; }
     header .description-header .description-details .description-text {
       color: #fff;
       padding-top: 50px;
