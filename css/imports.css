@@ -2,6 +2,15 @@ header {
   background: #273042;
   height: 433px; }
 
+section {
+  height: 750px; }
+
+footer:before {
+  background: #273042; }
+
+footer {
+  height: 150px; }
+
 html,
 body,
 ul,
