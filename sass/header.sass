@@ -1,0 +1,163 @@
+@import global
+
+header
+  background-color: $background-g-color
+  min-height: 433px
+  position: relative
+  background-image: url("../images/background.jpg")
+  background-position: center
+  background-size: cover
+
+  .background-header
+    width: 100%
+    height: 100%
+    position: absolute
+    background: linear-gradient($background-g-color 20%, transparent, $background-g-color)
+
+  .top-bar-header
+    background: $background-g-color
+    min-height: 60px
+    padding-top: 15px
+
+    h1
+      font-family: $font-croissant
+      color: #fff
+      font-size: 30px
+      text-align: center
+
+      span
+        color: $color-g-red
+
+    select
+      height: 30px
+      width: 60px
+      margin-left: 50px
+      +dropdown-background
+
+    ul
+      list-style: none
+      float: right
+
+      li
+        margin-right: 10px
+        float: left
+
+      li:first-child
+        a
+          margin: 5px
+          width: 20px
+          height: 20px
+          background: url('../icons/bell.png') no-repeat center
+          background-size: 12px 15px
+
+      li:nth-child(2)
+        a
+          margin: 5px
+          width: 20px
+          height: 20px
+          background: url('../icons/heart.png') no-repeat center
+          background-size: 16px 15px
+
+      li:last-child
+        a
+          margin: 5px
+          width: 20px
+          height: 20px
+          background: url('../icons/arrow-down.png') no-repeat center
+          background-size: 13px 7px
+
+      .profile
+        margin-left: 15px
+        width: 30px
+        height: 30px
+        overflow: hidden
+        +border-radius(15px)
+
+  .description-header
+    min-height: 190px
+    margin-top: 60px
+
+    .description-details
+
+      ul
+        list-style: none
+        float: right
+        margin-right: 10px
+
+        li
+          float: left
+          margin-right: 10px
+
+          button:hover
+            cursor: pointer
+
+          .follow
+            color: #fff
+            background: $color-g-red
+            border: none
+            height: 30px
+            width: 80px
+            +border-radius(20px)
+
+          .settings
+            border: 1px solid #fff
+            background: transparent
+            height: 30px
+            width: 30px
+            background: url('../icons/wrench.png') no-repeat center
+            background-size: 15px
+            +border-radius(15px)
+
+      .description-image
+
+        .image
+          width: 190px
+          height: 190px
+          overflow: hidden
+          +border-radius(190px)
+          margin: 0px auto
+
+          img
+            height: 100%
+
+      .description-text
+        color: #fff
+        padding-top: 50px
+        padding-left: 20px
+
+        h2
+          font-family: $font-croissant
+        p
+          font-family: $font-Montserrat
+        span
+          font-family: $font-Montserrat
+          font-size: 10px
+
+  .filter-header
+    margin-top: 83px
+    min-height: 40px
+
+    .filter-dropdown
+      padding: 0px
+
+      select
+        height: 30px
+        width: 90px
+        margin-left: 50px
+        +dropdown-background
+
+    .filter-menu
+      padding-bottom: 0px
+      ul
+        list-style: none
+
+        li
+          float: left
+          color: #fff
+          margin-left: 30px
+          font-size: 12px
+
+        .active
+          color: $color-g-red
+          border-bottom: 2px solid $color-g-red
+          padding-bottom: 7px

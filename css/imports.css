@@ -1,0 +1,160 @@
+header {
+  background-color: #273042;
+  min-height: 433px;
+  position: relative;
+  background-image: url("../images/background.jpg");
+  background-position: center;
+  background-size: cover; }
+  header .background-header {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: linear-gradient(#273042 20%, transparent, #273042); }
+  header .top-bar-header {
+    background: #273042;
+    min-height: 60px;
+    padding-top: 15px; }
+    header .top-bar-header h1 {
+      font-family: "Croissant One", cursive;
+      color: #fff;
+      font-size: 30px;
+      text-align: center; }
+      header .top-bar-header h1 span {
+        color: #E23943; }
+    header .top-bar-header select {
+      height: 30px;
+      width: 60px;
+      margin-left: 50px;
+      background: url("../icons/arrow-down.png") no-repeat right transparent;
+      background-size: 13px 7px;
+      appearance: none;
+      -moz-appearance: none;
+      -webkit-appearance: none;
+      border: none;
+      color: #fff;
+      font-family: 'Avenir'; }
+    header .top-bar-header ul {
+      list-style: none;
+      float: right; }
+      header .top-bar-header ul li {
+        margin-right: 10px;
+        float: left; }
+      header .top-bar-header ul li:first-child a {
+        margin: 5px;
+        width: 20px;
+        height: 20px;
+        background: url("../icons/bell.png") no-repeat center;
+        background-size: 12px 15px; }
+      header .top-bar-header ul li:nth-child(2) a {
+        margin: 5px;
+        width: 20px;
+        height: 20px;
+        background: url("../icons/heart.png") no-repeat center;
+        background-size: 16px 15px; }
+      header .top-bar-header ul li:last-child a {
+        margin: 5px;
+        width: 20px;
+        height: 20px;
+        background: url("../icons/arrow-down.png") no-repeat center;
+        background-size: 13px 7px; }
+      header .top-bar-header ul .profile {
+        margin-left: 15px;
+        width: 30px;
+        height: 30px;
+        overflow: hidden;
+        -webkit-border-radius: 15px;
+        -moz-border-radius: 15px;
+        -ms-border-radius: 15px;
+        border-radius: 15px; }
+  header .description-header {
+    min-height: 190px;
+    margin-top: 60px; }
+    header .description-header .description-details ul {
+      list-style: none;
+      float: right;
+      margin-right: 10px; }
+      header .description-header .description-details ul li {
+        float: left;
+        margin-right: 10px; }
+        header .description-header .description-details ul li button:hover {
+          cursor: pointer; }
+        header .description-header .description-details ul li .follow {
+          color: #fff;
+          background: #E23943;
+          border: none;
+          height: 30px;
+          width: 80px;
+          -webkit-border-radius: 20px;
+          -moz-border-radius: 20px;
+          -ms-border-radius: 20px;
+          border-radius: 20px; }
+        header .description-header .description-details ul li .settings {
+          border: 1px solid #fff;
+          background: transparent;
+          height: 30px;
+          width: 30px;
+          background: url("../icons/wrench.png") no-repeat center;
+          background-size: 15px;
+          -webkit-border-radius: 15px;
+          -moz-border-radius: 15px;
+          -ms-border-radius: 15px;
+          border-radius: 15px; }
+    header .description-header .description-details .description-image .image {
+      width: 190px;
+      height: 190px;
+      overflow: hidden;
+      -webkit-border-radius: 190px;
+      -moz-border-radius: 190px;
+      -ms-border-radius: 190px;
+      border-radius: 190px;
+      margin: 0px auto; }
+      header .description-header .description-details .description-image .image img {
+        height: 100%; }
+    header .description-header .description-details .description-text {
+      color: #fff;
+      padding-top: 50px;
+      padding-left: 20px; }
+      header .description-header .description-details .description-text h2 {
+        font-family: "Croissant One", cursive; }
+      header .description-header .description-details .description-text p {
+        font-family: "Montserrat", sans-serif; }
+      header .description-header .description-details .description-text span {
+        font-family: "Montserrat", sans-serif;
+        font-size: 10px; }
+  header .filter-header {
+    margin-top: 83px;
+    min-height: 40px; }
+    header .filter-header .filter-dropdown {
+      padding: 0px; }
+      header .filter-header .filter-dropdown select {
+        height: 30px;
+        width: 90px;
+        margin-left: 50px;
+        background: url("../icons/arrow-down.png") no-repeat right transparent;
+        background-size: 13px 7px;
+        appearance: none;
+        -moz-appearance: none;
+        -webkit-appearance: none;
+        border: none;
+        color: #fff;
+        font-family: 'Avenir'; }
+    header .filter-header .filter-menu {
+      padding-bottom: 0px; }
+      header .filter-header .filter-menu ul {
+        list-style: none; }
+        header .filter-header .filter-menu ul li {
+          float: left;
+          color: #fff;
+          margin-left: 30px;
+          font-size: 12px; }
+        header .filter-header .filter-menu ul .active {
+          color: #E23943;
+          border-bottom: 2px solid #E23943;
+          padding-bottom: 7px; }
+
+html,
+body,
+ul,
+ol {
+  margin: 0;
+  padding: 0; }
