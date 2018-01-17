@@ -15,7 +15,7 @@ gulp.task('bs-reload', function (done) {
 });
 
 gulp.task('browser-sync', function(done) {
-    browserSync.init(["css/*.css"], {
+    browserSync.init(["css/*.css", "js/*.js"], {
         server: {
             baseDir: "./"
         }

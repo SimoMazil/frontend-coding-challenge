@@ -4,7 +4,8 @@ header {
   position: relative;
   background-image: url("../images/background.jpg");
   background-position: center;
-  background-size: cover; }
+  background-size: cover;
+  margin-bottom: 10px; }
   header .background-header {
     width: 100%;
     height: 100%;
@@ -32,7 +33,7 @@ header {
       -webkit-appearance: none;
       border: none;
       color: #fff;
-      font-family: 'Avenir'; }
+      font-family: "Avenir"; }
     header .top-bar-header ul {
       list-style: none;
       float: right; }
@@ -125,7 +126,7 @@ header {
     margin-top: 83px;
     min-height: 40px; }
     header .filter-header .filter-dropdown {
-      padding: 0px; }
+      padding-bottom: 0px; }
       header .filter-header .filter-dropdown select {
         height: 30px;
         width: 90px;
@@ -137,7 +138,7 @@ header {
         -webkit-appearance: none;
         border: none;
         color: #fff;
-        font-family: 'Avenir'; }
+        font-family: "Avenir"; }
     header .filter-header .filter-menu {
       padding-bottom: 0px; }
       header .filter-header .filter-menu ul {
@@ -152,9 +153,101 @@ header {
           border-bottom: 2px solid #E23943;
           padding-bottom: 7px; }
 
+section.middle {
+  margin-bottom: 20px; }
+
+.cards-section .card {
+  min-height: 300px;
+  padding: 0px; }
+  .cards-section .card div {
+    padding-left: 10px;
+    padding-top: 10px; }
+    .cards-section .card div .slide {
+      width: 100%;
+      overflow: hidden;
+      position: relative; }
+      .cards-section .card div .slide .hover-events {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        -ms-border-radius: 5px;
+        border-radius: 5px; }
+        .cards-section .card div .slide .hover-events span {
+          position: absolute;
+          z-index: 2;
+          display: block;
+          width: 30px;
+          height: 30px;
+          cursor: pointer; }
+        .cards-section .card div .slide .hover-events .like {
+          right: 20px;
+          background: url("../icons/heart2.png") no-repeat center;
+          background-size: 25px; }
+        .cards-section .card div .slide .hover-events .arrow-left {
+          background: url("../icons/arrow-left.png") no-repeat center;
+          background-size: 15px; }
+        .cards-section .card div .slide .hover-events .arrow-right {
+          background: url("../icons/arrow-right.png") no-repeat center;
+          background-size: 15px;
+          right: 20; }
+      .cards-section .card div .slide img {
+        width: 100%;
+        height: auto;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        -ms-border-radius: 5px;
+        border-radius: 5px; }
+      .cards-section .card div .slide .hover-events:hover {
+        background: rgba(0, 0, 0, 0.5); }
+    .cards-section .card div .info h2 {
+      font-family: "Avenir";
+      font-weight: bold;
+      font-size: 18px;
+      color: #000;
+      margin-bottom: 10px; }
+      .cards-section .card div .info h2 span {
+        font-weight: normal;
+        font-size: 14px;
+        margin-left: 10px;
+        padding-left: 15px;
+        color: #FFCC3A;
+        background: url("../icons/star.png") no-repeat left;
+        background-size: 12px;
+        background-position-y: 2.5px; }
+    .cards-section .card div .info p {
+      font-family: "Avenir";
+      font-size: 14px;
+      color: #000; }
+
+.footer {
+  background: #273042;
+  height: 150px;
+  padding-left: 50px; }
+  .footer h1 {
+    font-family: "Croissant One", cursive;
+    color: #fff;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 40px; }
+    .footer h1 span {
+      color: #E23943; }
+
+@media only screen and (min-width: 768px) {
+  .cards-section {
+    max-height: 800px;
+    overflow-y: scroll; } }
+
+@media only screen and (max-width: 768px) {
+  .cards-section .card div {
+    padding: 10px; } }
+
 html,
 body,
 ul,
 ol {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  overflow-x: hidden; }
