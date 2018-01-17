@@ -153,11 +153,8 @@ header {
           border-bottom: 2px solid #E23943;
           padding-bottom: 7px; }
 
-section {
-  max-height: 800px;
-  overflow-y: scroll;
-  overflow-x: hidden;
-  margin-bottom: 20px; }
+section.middle {
+  margin-bottom: 50px; }
 
 .cards-section .card {
   min-height: 300px;
@@ -191,6 +188,19 @@ section {
       font-family: "Avenir";
       font-size: 14px;
       color: #000; }
+
+.footer {
+  background: #273042;
+  height: 150px;
+  padding-left: 50px; }
+  .footer h1 {
+    font-family: "Croissant One", cursive;
+    color: #fff;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 40px; }
+    .footer h1 span {
+      color: #E23943; }
 
 html,
 body,
