@@ -5,6 +5,11 @@ $(function () {
     },
     pagination: {
       active: false
+    },
+    play:{
+      interval: 5000,
+      auto: true,
+      pauseOnHover: true,
     }
   });
 
