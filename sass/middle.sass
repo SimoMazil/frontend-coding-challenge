@@ -6,38 +6,29 @@ section.middle
 .cards-section
 
   .card
-    min-height: 300px
+    min-height: 200px
     padding: 0px
 
     figure
-      padding-left: 10px
+      padding-left: 20px
       padding-top: 10px
       margin: 0px
 
       .slide
-        width: 100%
         overflow: hidden
         position: relative
 
-        .hover-events
-          position: absolute
-          width: 100%
-          height: 100%
-          z-index: 1
+        .images-slides
+          display: none
           +border-radius(5px)
 
           span
             position: absolute
-            z-index: 2
+            z-index: 11
             display: block
             width: 30px
             height: 30px
             cursor: pointer
-
-          .like
-            right: 20px
-            background: url('../icons/heart2.png') no-repeat center
-            background-size: 25px
 
           .arrow-left
             background: url('../icons/arrow-left.png') no-repeat center
@@ -46,8 +37,28 @@ section.middle
           .arrow-right
             background: url('../icons/arrow-right.png') no-repeat center
             background-size: 15px
-            right: 20
+            right: 10px
 
+        .hover-events
+          position: absolute
+          width: 100%
+          height: 100%
+          z-index: 11
+          +border-radius(5px)
+
+          span
+            position: absolute
+            z-index: 11
+            display: block
+            width: 20px
+            height: 20px
+            cursor: pointer
+
+          .like
+            right: 20px
+            background: url('../icons/heart2.png') no-repeat center
+            background-size: 20px
+            top: 10px
 
         img
           width: 100%
