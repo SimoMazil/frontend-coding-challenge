@@ -22,7 +22,7 @@ npm install
 Second Run
 
 ```
-gulp
+npm start
 ```
 
 Congratulations 🎉
