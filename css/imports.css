@@ -157,83 +157,100 @@ section.middle {
   margin-bottom: 20px; }
 
 .cards-section .card {
-  min-height: 300px;
+  min-height: 200px;
   padding: 0px; }
-  .cards-section .card div {
-    padding-left: 10px;
-    padding-top: 10px; }
-    .cards-section .card div .slide {
-      width: 100%;
+  .cards-section .card figure {
+    padding-left: 20px;
+    padding-top: 10px;
+    margin: 0px; }
+    .cards-section .card figure .slide {
       overflow: hidden;
       position: relative; }
-      .cards-section .card div .slide .hover-events {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        z-index: 1;
+      .cards-section .card figure .slide .images-slides {
+        display: none;
         -webkit-border-radius: 5px;
         -moz-border-radius: 5px;
         -ms-border-radius: 5px;
         border-radius: 5px; }
-        .cards-section .card div .slide .hover-events span {
+        .cards-section .card figure .slide .images-slides span {
           position: absolute;
-          z-index: 2;
+          z-index: 11;
           display: block;
           width: 30px;
           height: 30px;
           cursor: pointer; }
-        .cards-section .card div .slide .hover-events .like {
-          right: 20px;
-          background: url("../icons/heart2.png") no-repeat center;
-          background-size: 25px; }
-        .cards-section .card div .slide .hover-events .arrow-left {
+        .cards-section .card figure .slide .images-slides .arrow-left {
           background: url("../icons/arrow-left.png") no-repeat center;
           background-size: 15px; }
-        .cards-section .card div .slide .hover-events .arrow-right {
+        .cards-section .card figure .slide .images-slides .arrow-right {
           background: url("../icons/arrow-right.png") no-repeat center;
           background-size: 15px;
-          right: 20; }
-      .cards-section .card div .slide img {
+          right: 10px; }
+      .cards-section .card figure .slide .hover-events {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        z-index: 11;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        -ms-border-radius: 5px;
+        border-radius: 5px; }
+        .cards-section .card figure .slide .hover-events span {
+          position: absolute;
+          z-index: 11;
+          display: block;
+          width: 20px;
+          height: 20px;
+          cursor: pointer; }
+        .cards-section .card figure .slide .hover-events .like {
+          right: 20px;
+          background: url("../icons/heart2.png") no-repeat center;
+          background-size: 20px;
+          top: 10px; }
+      .cards-section .card figure .slide img {
         width: 100%;
         height: auto;
         -webkit-border-radius: 5px;
         -moz-border-radius: 5px;
         -ms-border-radius: 5px;
         border-radius: 5px; }
-      .cards-section .card div .slide .hover-events:hover {
+      .cards-section .card figure .slide .hover-events:hover {
         background: rgba(0, 0, 0, 0.5); }
-    .cards-section .card div .info h2 {
-      font-family: "Avenir";
-      font-weight: bold;
-      font-size: 18px;
-      color: #000;
-      margin-bottom: 10px; }
-      .cards-section .card div .info h2 span {
-        font-weight: normal;
+    .cards-section .card figure .info {
+      margin-top: 10px; }
+      .cards-section .card figure .info h2 {
+        font-family: "Avenir";
+        font-weight: bold;
+        font-size: 18px;
+        color: #000;
+        margin-bottom: 10px; }
+        .cards-section .card figure .info h2 span {
+          font-weight: normal;
+          font-size: 14px;
+          margin-left: 10px;
+          padding-left: 15px;
+          color: #FFCC3A;
+          background: url("../icons/star.png") no-repeat left;
+          background-size: 12px;
+          background-position-y: 2.5px; }
+      .cards-section .card figure .info p {
+        font-family: "Avenir";
         font-size: 14px;
-        margin-left: 10px;
-        padding-left: 15px;
-        color: #FFCC3A;
-        background: url("../icons/star.png") no-repeat left;
-        background-size: 12px;
-        background-position-y: 2.5px; }
-    .cards-section .card div .info p {
-      font-family: "Avenir";
-      font-size: 14px;
-      color: #000; }
+        color: #000; }
 
-.footer {
+footer:before {
   background: #273042;
   height: 150px;
   padding-left: 50px; }
-  .footer h1 {
-    font-family: "Croissant One", cursive;
-    color: #fff;
-    font-size: 30px;
-    text-align: center;
-    margin-top: 40px; }
-    .footer h1 span {
-      color: #E23943; }
+
+footer h1 {
+  font-family: "Croissant One", cursive;
+  color: #fff;
+  font-size: 30px;
+  text-align: center;
+  margin-top: 15px; }
+  footer h1 span {
+    color: #E23943; }
 
 @media only screen and (min-width: 768px) {
   .cards-section {
@@ -241,8 +258,8 @@ section.middle {
     overflow-y: scroll; } }
 
 @media only screen and (max-width: 768px) {
-  .cards-section .card div {
-    padding: 10px; } }
+  .cards-section .card figure {
+    padding: 20px; } }
 
 html,
 body,
