@@ -27,3 +27,8 @@ function verticalAlignArrows() {
     $(".arrow-left, .arrow-right").css({"top": `${arrow_dynamic_height}px`})
   }, 50)
 }
+
+function filterMenuClick(e) {
+  $(".filter-menu ul li").css({"color": "#fff", "border-bottom": "0px"})
+  $(e).parent().css({"color": "#E23943", "border-bottom": "2px solid #E23943", "padding-bottom": "7px"})
+}

@@ -110,7 +110,8 @@ header {
       border-radius: 190px;
       margin: 0px auto; }
       header .description-header .description-details .description-image .image img {
-        height: 100%; }
+        height: 100%;
+        max-width: none; }
     header .description-header .description-details .description-text {
       color: #fff;
       padding-top: 50px;
